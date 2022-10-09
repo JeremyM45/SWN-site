@@ -43,4 +43,5 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 ### Branding
 
 Purple HEX Color: 6345e9
+```
 Project Logo Font: "OCR A Extended"
