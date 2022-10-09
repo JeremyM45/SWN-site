@@ -1,11 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
 import styles from './index.module.css';
+
+const recentPosts = require("../../.docusaurus/docusaurus-plugin-content-blog/default/blog-post-list-prop-default.json");
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -27,6 +27,13 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <ul>
+          {recentPosts.items.slice(0, 5).map((item, index) => (
+            <li key={index}>
+              <a href={`${item.permalink}`}>{item.title}</a>{" "}
+            </li>
+          ))}
+        </ul>
       </main>
     </Layout>
   );
