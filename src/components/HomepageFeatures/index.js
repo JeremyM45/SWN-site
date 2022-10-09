@@ -4,32 +4,36 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Thing About Space War',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Quisque nec metus auctor, facilisis ipsum ac, blandit mauris. 
+        Nam pharetra auctor arcu vitae posuere. 
+        Phasellus eu malesuada purus. Donec id finibus purus. 
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Other Thing About Space War',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Cras fringilla ornare ex, quis luctus dolor molestie non. Cras eget hendrerit odio. Aenean suscipit odio enim, in imperdiet diam egestas ac. 
+        Cras consectetur, nisl eget commodo ullamcorper, libero augue ultricies leo, id blandit dui dui et ipsum. 
+        Nulla ultrices, enim suscipit venenatis efficitur, dui libero aliquam risus, sit amet hendrerit dui felis sed nisl. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Other Other Thing About Space War',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Donec sed volutpat elit. Nunc in lorem eget turpis aliquam congue. 
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        In iaculis justo ut ipsum pretium vulputate. 
+        In eleifend tristique nulla, non vulputate nisl mattis sed.
       </>
     ),
   },
