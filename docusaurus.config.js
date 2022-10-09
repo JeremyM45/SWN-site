@@ -57,7 +57,8 @@ const config = {
         id: "blog",
         routeBasePath: "blog",
         path: "./blog",
-
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: 'All News',
       },
     ],
   ],
