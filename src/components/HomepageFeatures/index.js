@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Thing About Space War',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    img: require('/static/img/moon.png').default,
     description: (
       <>
         Quisque nec metus auctor, facilisis ipsum ac, blandit mauris. 
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Other Thing About Space War',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    img: require('/static/img/space-travel.png').default,
     description: (
       <>
         Cras fringilla ornare ex, quis luctus dolor molestie non. Cras eget hendrerit odio. Aenean suscipit odio enim, in imperdiet diam egestas ac. 
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Other Other Thing About Space War',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    img: require('/static/img/explosion.png').default,
     description: (
       <>
         Donec sed volutpat elit. Nunc in lorem eget turpis aliquam congue. 
@@ -39,11 +39,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({img, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureSvg} src={img} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
