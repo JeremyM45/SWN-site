@@ -56,10 +56,9 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'SWN',
         logo: {
           alt: 'SWN Logo',
-          src: 'img/logo.svg',
+          src: 'img/SWN-Logo.png',
         },
         items: [
           {
