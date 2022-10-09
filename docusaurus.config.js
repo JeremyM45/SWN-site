@@ -56,9 +56,9 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'My Site',
+        title: 'SWN',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'SWN Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -69,11 +69,6 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Latest News', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
