@@ -3,3 +3,8 @@ Author1:
   title: Author1's
   url: https://example.com/
   image_url: ./../static/img/SWN-Logo.png
+Author2:
+  name: Jack Lilley
+  title: Jack Lilley
+  url: https://jacklilley.us
+  image_url: ./../static/img/SWN-Logo.png
