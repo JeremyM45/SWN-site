@@ -1,26 +1,10 @@
 import React from "react";
 import clsx from 'clsx';
 import Layout from "@theme/Layout";
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import styles from './index.module.css';
+import HomepageFeatures from './homepage-features';
+import styles from '../css/index.module.css';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import RecentPosts from "./recent-posts";
-
-
-// const [width, setWidth] = useState<number>(window.innerWidth);
-
-// function handleWindowSizeChange() {
-//     setWidth(window.innerWidth);
-// }
-
-// useEffect(() => {
-//     window.addEventListener('resize', handleWindowSizeChange);
-//     return () => {
-//         window.removeEventListener('resize', handleWindowSizeChange);
-//     }
-// }, []);
-
-// const isMobile = width <= 768;
 
 // Banner
 function HomepageHeader() {
