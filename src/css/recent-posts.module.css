@@ -1,15 +1,14 @@
 .grid {
   display: grid;
-  
+  column-gap: 20%;
   grid-template-columns: auto auto;
-  border: 1px solid white;
 }
-.component {
-  border: 2px solid white;
+.card {
   border-radius: 25px;
-  
 }
 
-.component :hover{
-  transform: scale(1.5);
+.title{
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10%;
 }

@@ -23,7 +23,10 @@ function Home({ recentPosts }) {
     <Layout description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <HomepageFeatures />
-      <RecentPosts recentPosts={recentPosts} />
+      <div className={styles.hover}>
+        <RecentPosts recentPosts={recentPosts} />
+      </div>
+      
     </Layout>
   );
 }

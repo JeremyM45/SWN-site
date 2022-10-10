@@ -5,24 +5,23 @@ import styles from "../css/recent-posts.module.css";
 
 export default function RecentPosts({ recentPosts }){
   return (
-      <div className="container">
+      <div className="container margin-top--xl margin-bottom--lg">
+        <h2 className={styles.title}>Recent Posts</h2>
         <div className={styles.grid}>
-            {recentPosts.map(({ content: BlogPostContent }) => (
-              <a href={BlogPostContent.metadata.permalink}>
-                <div className={styles.component}>
-                  
-                    <BlogPostProvider
-                    key={BlogPostContent.metadata.permalink}
-                    content={BlogPostContent}
-                    >
+          {recentPosts.map(({ content: BlogPostContent }) => (
+            <div className={styles.card}>
+                <BlogPostProvider
+                key={BlogPostContent.metadata.permalink}
+                content={BlogPostContent}
+                >
+                  {console.log(BlogPostItem)}
                     <BlogPostItem>
                       <BlogPostContent />
                     </BlogPostItem>
-                    </BlogPostProvider>
-                  
-                </div>
-              </a>
-            ))}
+                </BlogPostProvider>
+              </div>
+            
+          ))}
           </div>
       </div>
   )
