@@ -78,7 +78,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'getting-to-space',
+            docId: 'getting-to-space/getting-to-space',
             position: 'left',
             label: 'History',
           },
