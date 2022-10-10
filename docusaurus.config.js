@@ -110,15 +110,15 @@ const config = {
             items: [
               {
                 label: 'Why We Cover The Space War',
-                to: '/blog',
+                to: '/blog/tags/why-we-cover-the-space-war',
               },
               {
-                label: 'Future OF Humanity',
-                to: '/blog',
+                label: 'Future of Humanity',
+                to: '/blog/tags/future-of-humanity',
               },
               {
                 label: 'Editors Notes',
-                to: '/blog',
+                to: '/blog/tags/editors-note',
               },
             ],
           },
@@ -127,15 +127,15 @@ const config = {
             items: [
               {
                 label: 'Critical Updates',
-                to: '/blog',
+                to: '/blog/tags/critical-update',
               },
               {
                 label: 'Space Advancements',
-                to: '/blog',
+                to: '/blog/tags/space-advancement',
               },
               {
                 label: 'Letters From The Front',
-                to: '/blog',
+                to: '/blog/tags/letters-from-the-front',
               },
             ],
           },
