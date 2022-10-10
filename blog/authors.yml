@@ -1,10 +1,10 @@
 Author1:
-  name: Author1's name
+  name: Mike Hawk
   title: Author1's
   url: https://example.com/
-  image_url: ./../static/img/SWN-Logo.png
+  image_url: ./../static/img/Mike.jpg
 Author2:
-  name: Jack Lilley
-  title: Jack Lilley
-  url: https://jacklilley.us
-  image_url: ./../static/img/SWN-Logo.png
+  name: Russ Goldberg
+  title: Writer, Space Enthusiast, Burger Connoisseur
+  url: https://mcdonalds.com
+  image_url: ./../static/img/Russ.jpg

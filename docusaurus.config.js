@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Space War News',
   tagline: 'The Only Source of News on the Space War',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://spacewarnews.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -33,22 +33,35 @@ const config = {
           editUrl:
             'https://example.com/',
         },
-        blog: {
-          showReadingTime: true,
-          blogSidebarCount: "ALL",
-          blogSidebarTitle: "All News",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://example.com/",
-        },
+        blog: false, 
+        // {
+        //   showReadingTime: true,
+        //   blogSidebarCount: "ALL",
+        //   blogSidebarTitle: "All News",
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     "https://example.com/",
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
   ],
-
+  plugins: [
+    // Use custom blog plugin
+    [
+      "./plugins/blog-plugin",
+      {
+        id: "blog",
+        routeBasePath: "blog",
+        path: "./blog",
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: 'All News',
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -65,9 +78,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'getting-to-space',
             position: 'left',
-            label: 'Tutorial',
+            label: 'History',
           },
           {to: '/blog', label: 'Latest News', position: 'left'},
         ],
@@ -76,25 +89,58 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'History',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Why Space',
+                to: '/docs/category/what-we-learned',
+              },
+              {
+                label: 'Getting To Space',
+                to: '/docs/category/getting-to-space',
+              },
+              {
+              label: 'Humanities Obsession With Space',
+              to: '/docs/category/obsession-with-space',
+            },
+            ],
+          },
+          {
+            title: 'Who We Are',
+            items: [
+              {
+                label: 'Why We Cover The Space War',
+                to: '/blog',
+              },
+              {
+                label: 'Future OF Humanity',
+                to: '/blog',
+              },
+              {
+                label: 'Editors Notes',
+                to: '/blog',
               },
             ],
           },
           {
-            title: 'News',
+            title: 'Latest From The Space War',
             items: [
               {
-                label: 'Latest News',
+                label: 'Critical Updates',
+                to: '/blog',
+              },
+              {
+                label: 'Space Advancements',
+                to: '/blog',
+              },
+              {
+                label: 'Letters From The Front',
                 to: '/blog',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}`,
+        copyright: `Copyright © Space War News ${new Date().getFullYear()}`,
       },
       prism: {
         darkTheme: darkCodeTheme
