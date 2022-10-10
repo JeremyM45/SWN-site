@@ -33,22 +33,35 @@ const config = {
           editUrl:
             'https://example.com/',
         },
-        blog: {
-          showReadingTime: true,
-          blogSidebarCount: "ALL",
-          blogSidebarTitle: "All News",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://example.com/",
-        },
+        blog: false, 
+        // {
+        //   showReadingTime: true,
+        //   blogSidebarCount: "ALL",
+        //   blogSidebarTitle: "All News",
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     "https://example.com/",
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
   ],
-
+  plugins: [
+    // Use custom blog plugin
+    [
+      "./plugins/blog-plugin",
+      {
+        id: "blog",
+        routeBasePath: "blog",
+        path: "./blog",
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: 'All News',
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
