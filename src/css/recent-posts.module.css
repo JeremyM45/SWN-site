@@ -1,0 +1,9 @@
+.grid {
+  flex: auto;
+  
+  border: 1px solid white;
+}
+.component {
+  border: 3px solid white;
+  width: 50%;
+}
