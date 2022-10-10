@@ -89,19 +89,52 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'History',
             items: [
               {
-                label: 'History',
-                to: '/docs/category/obsession-with-space',
+                label: 'Why Space',
+                to: '/docs/category/what-we-learned',
+              },
+              {
+                label: 'Getting To Space',
+                to: '/docs/category/getting-to-space',
+              },
+              {
+              label: 'Humanities Obsession With Space',
+              to: '/docs/category/obsession-with-space',
+            },
+            ],
+          },
+          {
+            title: 'Who We Are',
+            items: [
+              {
+                label: 'Why We Cover The Space War',
+                to: '/blog',
+              },
+              {
+                label: 'Future OF Humanity',
+                to: '/blog',
+              },
+              {
+                label: 'Editors Notes',
+                to: '/blog',
               },
             ],
           },
           {
-            title: 'News',
+            title: 'Latest From The Space War',
             items: [
               {
-                label: 'Latest News',
+                label: 'Critical Updates',
+                to: '/blog',
+              },
+              {
+                label: 'Space Advancements',
+                to: '/blog',
+              },
+              {
+                label: 'Letters From The Front',
                 to: '/blog',
               },
             ],
