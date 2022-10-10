@@ -4,36 +4,36 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Thing About Space War',
+    title: 'What is a Space War',
     img: require('/static/img/moon.png').default,
     description: (
       <>
-        Quisque nec metus auctor, facilisis ipsum ac, blandit mauris. 
-        Nam pharetra auctor arcu vitae posuere. 
-        Phasellus eu malesuada purus. Donec id finibus purus. 
+        Space warfare is the fight conducted between nations in outer space without boundaries. 
+        It's a dangerous war zone where resources are scarce and death is common. However, space warfare has its advantages: 
+        it's an area that is out of our reach and inaccessible to most of us. Therefore, it might be a place where peace can flourish.
       </>
     ),
   },
   {
-    title: 'Other Thing About Space War',
+    title: 'Space War Economics',
     img: require('/static/img/space-travel.png').default,
     description: (
       <>
-        Cras fringilla ornare ex, quis luctus dolor molestie non. Cras eget hendrerit odio. Aenean suscipit odio enim, in imperdiet diam egestas ac. 
-        Cras consectetur, nisl eget commodo ullamcorper, libero augue ultricies leo, id blandit dui dui et ipsum. 
-        Nulla ultrices, enim suscipit venenatis efficitur, dui libero aliquam risus, sit amet hendrerit dui felis sed nisl. 
+        Space wars are fought between nations over natural resources, political control and military dominance. 
+        Though wars have occurred in space before, most involve orbiting satellites- not planets. These engagements range from minor collisions to full-fledged battles that claim lives and destroy property. 
+        During the 1980s, 3% of world Gross Domestic Product (GDP) was spent on defense- that's compared to only 2% spent on defense by the United States. As a result, it's difficult for any nation to defend itself in space without a lot of money. 
       </>
     ),
   },
   {
-    title: 'Other Other Thing About Space War',
+    title: 'Space War Brutality',
     img: require('/static/img/explosion.png').default,
     description: (
       <>
-        Donec sed volutpat elit. Nunc in lorem eget turpis aliquam congue. 
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        In iaculis justo ut ipsum pretium vulputate. 
-        In eleifend tristique nulla, non vulputate nisl mattis sed.
+        Space warfare can be brutal since both sides must expend resources fighting. 
+        Both sides lose military equipment, tanks and other weapons in space while also losing soldiers and pilots. 
+        In addition, both sides lose their food supply since they can't return to the ground after traveling through space. 
+        Because of this, most military conflicts end up being a waste of precious resources for both sides.
       </>
     ),
   },

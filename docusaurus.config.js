@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Space War News',
   tagline: 'The Only Source of News on the Space War',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://spacewarnews.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -78,9 +78,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'getting-to-space',
             position: 'left',
-            label: 'Tutorial',
+            label: 'History',
           },
           {to: '/blog', label: 'Latest News', position: 'left'},
         ],
@@ -92,8 +92,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'History',
+                to: '/docs/category/obsession-with-space',
               },
             ],
           },
@@ -107,7 +107,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}`,
+        copyright: `Copyright © Space War News ${new Date().getFullYear()}`,
       },
       prism: {
         darkTheme: darkCodeTheme
