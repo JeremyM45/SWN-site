@@ -6,6 +6,23 @@ import styles from './index.module.css';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import RecentPosts from "./recent-posts";
 
+
+// const [width, setWidth] = useState<number>(window.innerWidth);
+
+// function handleWindowSizeChange() {
+//     setWidth(window.innerWidth);
+// }
+
+// useEffect(() => {
+//     window.addEventListener('resize', handleWindowSizeChange);
+//     return () => {
+//         window.removeEventListener('resize', handleWindowSizeChange);
+//     }
+// }, []);
+
+// const isMobile = width <= 768;
+
+// Banner
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -18,9 +35,12 @@ function HomepageHeader() {
   );
 }
 
+// Main
 function Home({ recentPosts }) {
   return (
+    
     <Layout description="Description will go into a meta tag in <head />">
+      
       <HomepageHeader />
       <HomepageFeatures />
       <div className={styles.hover}>
