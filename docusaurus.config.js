@@ -3,6 +3,71 @@
 
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const blogLinks = [
+  {
+    label: 'All News',
+    to: '/blog'
+  },
+  {
+    label: 'Critical Updates',
+    to: '/blog/tags/critical-update',
+  },
+  {
+    label: 'Space Advancements',
+    to: '/blog/tags/space-advancement',
+  },
+  {
+    label: 'Letters From The Front',
+    to: '/blog/tags/letters-from-the-front',
+  },
+  {
+    label: 'Why We Cover The Space War',
+    to: '/blog/tags/why-we-cover-the-space-war',
+  },
+  {
+    label: 'Future of Humanity',
+    to: '/blog/tags/future-of-humanity',
+  },
+  {
+    label: 'Editors Notes',
+    to: '/blog/tags/editors-note',
+  },
+]
+
+const docLinks = [
+  {
+    label: 'Why Space',
+    to: '/docs/category/what-we-learned',
+  },
+  {
+    label: 'Getting To Space',
+    to: '/docs/category/getting-to-space',
+  },
+  {
+  label: 'Humanities Obsession With Space',
+  to: '/docs/category/obsession-with-space',
+  }
+]
+
+function generateBlogLinks(labelArray) {
+  if(labelArray){
+    return blogLinks.filter(x => x.label == labelArray[0] || x.label == labelArray[1] || x.label == labelArray[2])
+  }
+  else{
+    return blogLinks.map(x => x);
+  }
+  
+}
+
+const generateDocsLinks = (labelArray) => {
+  if(labelArray){
+    return docLinks.filter(x => x.label == labelArray[0] || x.label == labelArray[1] || x.label == labelArray[2])
+  }
+  else{
+    return docLinks.map(x => x);
+  }
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Space War News',
@@ -34,15 +99,6 @@ const config = {
             'https://example.com/',
         },
         blog: false, 
-        // {
-        //   showReadingTime: true,
-        //   blogSidebarCount: "ALL",
-        //   blogSidebarTitle: "All News",
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     "https://example.com/",
-        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -82,7 +138,12 @@ const config = {
             position: 'left',
             label: 'History',
           },
-          {to: '/blog', label: 'Latest News', position: 'left'},
+          {
+            type: 'dropdown',
+            label: 'News',
+            position: 'left',
+            items: generateBlogLinks()
+          },
         ],
       },
       footer: {
@@ -90,54 +151,15 @@ const config = {
         links: [
           {
             title: 'History',
-            items: [
-              {
-                label: 'Why Space',
-                to: '/docs/category/what-we-learned',
-              },
-              {
-                label: 'Getting To Space',
-                to: '/docs/category/getting-to-space',
-              },
-              {
-              label: 'Humanities Obsession With Space',
-              to: '/docs/category/obsession-with-space',
-            },
-            ],
+            items: generateDocsLinks(),
           },
           {
             title: 'Who We Are',
-            items: [
-              {
-                label: 'Why We Cover The Space War',
-                to: '/blog/tags/why-we-cover-the-space-war',
-              },
-              {
-                label: 'Future of Humanity',
-                to: '/blog/tags/future-of-humanity',
-              },
-              {
-                label: 'Editors Notes',
-                to: '/blog/tags/editors-note',
-              },
-            ],
+            items: generateBlogLinks(['Why We Cover The Space War', 'Future of Humanity', 'Editors Notes'])
           },
           {
             title: 'Latest From The Space War',
-            items: [
-              {
-                label: 'Critical Updates',
-                to: '/blog/tags/critical-update',
-              },
-              {
-                label: 'Space Advancements',
-                to: '/blog/tags/space-advancement',
-              },
-              {
-                label: 'Letters From The Front',
-                to: '/blog/tags/letters-from-the-front',
-              },
-            ],
+            items:  generateBlogLinks(['Critical Updates', 'Space Advancements', 'Letters From The Front'])
           },
         ],
         copyright: `Copyright © Space War News ${new Date().getFullYear()}`,
